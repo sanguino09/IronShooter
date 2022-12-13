@@ -1,0 +1,152 @@
+body {
+  /*Cool background similar to old flash games*/
+  background-image: linear-gradient(#c2b280, #8090c2, #c2b280);
+  /*prevent scroll bars to appear on the window ( ugly and useless ) */
+  overflow: hidden;
+}
+/*gameLogo image*/
+h1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/*text shown as introduction*/
+#introText {
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px 20px;
+  font-weight: bolder;
+  font-size: 30px;
+  font-style: oblique;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  /*Create a backround likea wooden sign*/
+  background-image: linear-gradient(
+    #ba8e4a,
+    #63462d,
+    #b07c4f,
+    #704f32,
+    #ba8e4a,
+    #63462d,
+    #b07c4f,
+    #704f32,
+    #ba8e4a,
+    #63462d,
+    #b07c4f,
+    #704f32,
+    #ba8e4a,
+    #63462d,
+    #b07c4f,
+    #704f32,
+    #ba8e4a,
+    #63462d,
+    #b07c4f,
+    #704f32,
+    #ba8e4a,
+    #63462d,
+    #b07c4f,
+    #704f32
+  );
+  /*makes the background a blurry effect*/
+  backdrop-filter: blur(500px);
+}
+/*both buttons in each side of the introduction text to change to the previous or next*/
+#buttonPrev {
+  border-radius: 10px 0px 0px 10px;
+  font-weight: bolder;
+}
+
+#buttonNext {
+  border-radius: 0px 10px 10px 0px;
+  font-weight: bolder;
+}
+
+#nextPrev {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  margin: 0% 20% 0%;
+}
+/*Data entered by the user*/
+#userData {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  font-style: oblique;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+#buttonStart {
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(249, 170, 0);
+}
+/*____________________________________________________________________________________*/
+/*Canvas*/
+#canvas {
+  border-style: solid;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*User info shown aside the canvas*/
+#userPad {
+  border-color: #000;
+  border-width: 5px;
+  background-image: url("./img/userPad.png");
+  background-repeat: no-repeat;
+  padding: 10px 200px 350px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  font-size: large;
+  justify-content: left;
+  margin-left: 1000px;
+}
+
+#name {
+  text-decoration: underline;
+  font-weight: 600px;
+  font-size: 30px;
+}
+
+#buttonRetry {
+  border-radius: 10px;
+  margin-top: 60px;
+  margin-right: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  background-color: rgb(249, 170, 0);
+}
+
+#warning {
+  display: none;
+}
+
+/*movil iPhone 7 w=750px h=1334px*/
+@media only screen and (max-width: 751px) {
+  /*#warning{
+    display:block;
+    margin-top: 50%;
+    margin-left: 50%
+  }*/
+}

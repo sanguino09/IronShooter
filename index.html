@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <!--Linking this HTML to the CSS, giving it Responsive attributes and adding a small Google tab icon-->
+    <link rel="stylesheet" href="style.css" />
+    <meta content="charset=UTF-8" />
+    <!--Small crosshair icon in the Google tab-->
+    <link rel="icon" href="./img/logo.png" />
+    <!--Making it responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ironshooter</title>
+  </head>
+  <body>
+    <!--If it is a mobile phone this warning will come up-->
+    <div id="warning">This game cannot run on mobile phones, sorry :( Maybe try it in a computer :)</div>
+    <br />
+    <!--Game's name and presentation-->
+    <div id="gameSign"><img src = img/placa.png></div>
+    <section id="intro">
+      <!--Introductory slider to read about the game-->
+      <div id="nextPrev">
+        <button id="buttonPrev"></button>
+        <div id="introText"></div>
+        <button id="buttonNext"></button>
+      </div>
+      <!--User´s data input-->
+      <div id="userData">
+        <form action="./main.html" method="get">
+          <!--Name that will appear for the user-->
+          <label
+            >Soldier's Name:&nbsp;<input
+              id="userName"
+              type="name"
+              name="userName" /></label
+          ><br />
+          <!--Choosing the color of the target-->
+          <label>Target's Color:&nbsp;&nbsp;</label>
+          <label for="web">Red</label
+          ><input type="radio" id="userColor" value="red" name="userColor" />
+          <label for="ux">Blue</label
+          ><input type="radio" id="userColor" value="blue" name="userColor" />
+          <br />
+          <!--Choosing the difficulty-->
+          <label>Difficulty:&nbsp;&nbsp;</label>
+          <label for="web">Easy</label
+          ><input type="radio" id="gameMode" value="easy" name="gameMode" />
+          <label for="ux">Hard</label
+          ><input type="radio" id="gameMode" value="hard" name="gameMode" />
+          <br />
+          <!--Starting button-->
+          <button
+            id="buttonStart"
+            style="font-weight: 1000"
+            onclick="window.location.href='main.html';"
+            type="submit"
+          >
+            Let's Shoot!
+          </button>
+        </form>
+      </div>
+    </section>
+    <!--Color choosing options datalist-->
+    <datalist id="colors">
+      <option>Red</option>
+      <option>Blue</option>
+    </datalist>
+    <!--Linking this page to its correspodent Js-->
+    <script src="./index.js"></script>
+  </body>
+</html>

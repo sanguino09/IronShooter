@@ -4,4 +4,4 @@ The most important thing I learned while developing this final project was the s
 
 Even if the original idea was more advanced the simpler way I found to end it up on time for this Wednesday's presentation is more than enough yo satisfy the expectations and obtain a fair fun short game.
 
-The responsive was way too difficult with a canvas because it was not responding to my commands, so instead I just chose to go with a different aprroach.
+The responsive has a trick, when in phone a warning will appear telling the user the game cannot be played unless you rotate it.

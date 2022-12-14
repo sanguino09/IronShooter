@@ -146,7 +146,7 @@ body {
   padding: 20px;
 }
 
-/*mobile phone iPhone 7*/
+/*mobile phone iPhone 7 vertical*/
 @media only screen and (max-width: 751px) {
   #warning {
     display: block;
@@ -168,3 +168,4 @@ body {
     display: none;
   }
 }
+/*If you are in computer or your phone is tilted down the game will work*/
